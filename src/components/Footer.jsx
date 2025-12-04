@@ -38,7 +38,7 @@ const Footer = () => {
         </div>
         
         <div className="footer-bottom">
-          <p>© {currentYear} Yrvin - QA Automation Engineer. Todos los derechos reservados.</p>
+          <p>© {currentYear} Yrvin - QA Automation SemiSenior Engineer. Todos los derechos reservados.</p>
           <p className="made-with">
             Hecho con <span className="heart">❤️</span> y <span className="highlight">React</span>
           </p>
