@@ -20,8 +20,8 @@ const About = () => {
               aseguren la calidad del software.
             </p>
             <p className="about-paragraph">
-              Mi enfoque combina conocimientos profundos en <strong>frameworks de automatización</strong> 
-              como Selenium, Cypress y Playwright, con habilidades en desarrollo frontend y backend, 
+              Mi enfoque combina conocimientos profundos en <strong>frameworks de automatización </strong> 
+              como Selenium, Playwright, Karate DSL y REST Assured, con habilidades en desarrollo frontend y backend, 
               permitiéndome entender el producto desde múltiples perspectivas.
             </p>
             <div className="about-stats">
