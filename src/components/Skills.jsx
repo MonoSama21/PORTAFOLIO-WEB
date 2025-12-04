@@ -1,35 +1,52 @@
 import './Skills.css';
+import seleniumLogo from '../assets/images/selenium.png';
+import cypressLogo from '../assets/images/cypress-1.svg';
+import playwrightLogo from '../assets/images/playwright.png';
+import postmanLogo from '../assets/images/postman.webp';
+import jmeterLogo from '../assets/images/jmter.png';
+import restAssuredLogo from '../assets/images/Rest Assured.png';
+import javascriptLogo from '../assets/images/javascript.png';
+import typescriptLogo from '../assets/images/typescript.svg';
+import htmlCssLogo from '../assets/images/html css.png';
+import tailwindLogo from '../assets/images/tailwind.webp';
+import bootstrapLogo from '../assets/images/boostrap.svg';
+import pythonLogo from '../assets/images/python.png';
+import javaLogo from '../assets/images/java-seeklogo.png';
+import sqlLogo from '../assets/images/sql server.png';
+import gitLogo from '../assets/images/git.png';
+import jiraLogo from '../assets/images/jira-logo-png_seeklogo-338597.png';
+import vscodeLogo from '../assets/images/visual studio code.png';
+import intellijLogo from '../assets/images/IntelliJ_IDEA_Icon.svg.png';
+import karateLogo from '../assets/images/karate.png';
 
 const Skills = () => {
   const skills = {
     automation: [
-      { name: 'Selenium', level: 90, icon: '🤖' },
-      { name: 'Cypress', level: 85, icon: '🌲' },
-      { name: 'Playwright', level: 80, icon: '🎭' },
-      { name: 'Jest', level: 85, icon: '🃏' },
-      { name: 'Postman', level: 90, icon: '📮' },
-      { name: 'JMeter', level: 75, icon: '⚡' }
+      { name: 'Selenium', icon: seleniumLogo },
+      { name: 'Cypress', icon: cypressLogo },
+      { name: 'Playwright', icon: playwrightLogo },
+      { name: 'Rest Assured', icon: restAssuredLogo },
+      { name: 'Karate DSL', icon: karateLogo },
+      { name: 'Postman', icon: postmanLogo },
+      { name: 'JMeter', icon: jmeterLogo }
     ],
     frontend: [
-      { name: 'React', level: 85, icon: '⚛️' },
-      { name: 'JavaScript', level: 90, icon: '🟨' },
-      { name: 'TypeScript', level: 80, icon: '🔷' },
-      { name: 'HTML/CSS', level: 90, icon: '🎨' },
-      { name: 'Tailwind', level: 80, icon: '💨' }
+      { name: 'JavaScript', icon: javascriptLogo },
+      { name: 'TypeScript', icon: typescriptLogo },
+      { name: 'HTML/CSS', icon: htmlCssLogo },
+      { name: 'Tailwind', icon: tailwindLogo },
+      { name: 'Bootstrap', icon: bootstrapLogo }
     ],
     backend: [
-      { name: 'Node.js', level: 80, icon: '🟢' },
-      { name: 'Python', level: 85, icon: '🐍' },
-      { name: 'Java', level: 75, icon: '☕' },
-      { name: 'SQL', level: 80, icon: '🗄️' },
-      { name: 'REST API', level: 85, icon: '🔌' }
+      { name: 'Python', icon: pythonLogo },
+      { name: 'Java', icon: javaLogo },
+      { name: 'SQL Server', icon: sqlLogo }
     ],
     tools: [
-      { name: 'Git', level: 90, icon: '📦' },
-      { name: 'Docker', level: 75, icon: '🐳' },
-      { name: 'Jenkins', level: 70, icon: '🔧' },
-      { name: 'Jira', level: 85, icon: '📊' },
-      { name: 'VS Code', level: 95, icon: '💻' }
+      { name: 'Git', icon: gitLogo },
+      { name: 'Jira', icon: jiraLogo },
+      { name: 'VS Code', icon: vscodeLogo },
+      { name: 'IntelliJ IDEA', icon: intellijLogo }
     ]
   };
 
@@ -50,15 +67,10 @@ const Skills = () => {
             <div className="skills-grid">
               {skills.automation.map((skill) => (
                 <div key={skill.name} className="skill-card">
-                  <div className="skill-icon">{skill.icon}</div>
-                  <h4>{skill.name}</h4>
-                  <div className="skill-bar">
-                    <div 
-                      className="skill-progress" 
-                      style={{ width: `${skill.level}%` }}
-                    ></div>
+                  <div className="skill-icon">
+                    <img src={skill.icon} alt={skill.name} />
                   </div>
-                  <span className="skill-level">{skill.level}%</span>
+                  <h4>{skill.name}</h4>
                 </div>
               ))}
             </div>
@@ -72,15 +84,10 @@ const Skills = () => {
             <div className="skills-grid">
               {skills.frontend.map((skill) => (
                 <div key={skill.name} className="skill-card">
-                  <div className="skill-icon">{skill.icon}</div>
-                  <h4>{skill.name}</h4>
-                  <div className="skill-bar">
-                    <div 
-                      className="skill-progress" 
-                      style={{ width: `${skill.level}%` }}
-                    ></div>
+                  <div className="skill-icon">
+                    <img src={skill.icon} alt={skill.name} />
                   </div>
-                  <span className="skill-level">{skill.level}%</span>
+                  <h4>{skill.name}</h4>
                 </div>
               ))}
             </div>
@@ -94,15 +101,10 @@ const Skills = () => {
             <div className="skills-grid">
               {skills.backend.map((skill) => (
                 <div key={skill.name} className="skill-card">
-                  <div className="skill-icon">{skill.icon}</div>
-                  <h4>{skill.name}</h4>
-                  <div className="skill-bar">
-                    <div 
-                      className="skill-progress" 
-                      style={{ width: `${skill.level}%` }}
-                    ></div>
+                  <div className="skill-icon">
+                    <img src={skill.icon} alt={skill.name} />
                   </div>
-                  <span className="skill-level">{skill.level}%</span>
+                  <h4>{skill.name}</h4>
                 </div>
               ))}
             </div>
@@ -116,15 +118,10 @@ const Skills = () => {
             <div className="skills-grid">
               {skills.tools.map((skill) => (
                 <div key={skill.name} className="skill-card">
-                  <div className="skill-icon">{skill.icon}</div>
-                  <h4>{skill.name}</h4>
-                  <div className="skill-bar">
-                    <div 
-                      className="skill-progress" 
-                      style={{ width: `${skill.level}%` }}
-                    ></div>
+                  <div className="skill-icon">
+                    <img src={skill.icon} alt={skill.name} />
                   </div>
-                  <span className="skill-level">{skill.level}%</span>
+                  <h4>{skill.name}</h4>
                 </div>
               ))}
             </div>

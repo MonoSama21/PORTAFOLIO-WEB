@@ -17,8 +17,7 @@ const Hero = () => {
           </h1>
           <h2 className="hero-subtitle">QA Automation Engineer & Full Stack Developer</h2>
           <p className="hero-description">
-            Especializado en automatización de pruebas con frameworks modernos como 
-            Selenium, Cypress y Playwright. Apasionado por la calidad del software 
+            Especializado en automatización de pruebas con frameworks BackEnd y FrontEnd. Apasionado por la calidad del software 
             y el desarrollo full stack.
           </p>
           <div className="hero-buttons">
@@ -44,22 +43,21 @@ const Hero = () => {
                 <span></span>
                 <span></span>
               </div>
-              <span className="window-title">test_automation.js</span>
+              <span className="window-title">qa-automation.spec.js</span>
             </div>
             <div className="code-content">
               <pre>
-{`describe('Portfolio Tests', () => {
-  it('should load successfully', () => {
-    cy.visit('/portfolio')
-    cy.get('.hero-title')
-      .should('be.visible')
-      .and('contain', 'Yrvin')
-    
-    cy.get('.skills-grid')
-      .children()
-      .should('have.length.gt', 0)
-  })
-})`}
+{`import { test, expect } from '@playwright/test';
+
+test('Portfolio validation', async ({ page }) => {
+  await page.goto('/');
+  
+  await expect(page.locator('.hero-title'))
+    .toContainText('Yrvin');
+  
+  await expect(page.locator('.skills-grid'))
+    .toBeVisible();
+});`}
               </pre>
             </div>
           </div>

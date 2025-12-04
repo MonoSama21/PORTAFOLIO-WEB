@@ -7,8 +7,8 @@ const Projects = () => {
   const projects = [
     {
       id: 1,
-      title: 'E-commerce Test Suite',
-      description: 'Suite completa de pruebas automatizadas para plataforma e-commerce con más de 150 test cases.',
+      title: 'Automation Suite Playwright',
+      description: 'Suite completa de pruebas automatizadas para plataforma educativa con mas de 50 casos de prueba automatizados.',
       technologies: ['Cypress', 'JavaScript', 'CI/CD'],
       category: 'automation',
       image: '🛒',
@@ -17,8 +17,8 @@ const Projects = () => {
     },
     {
       id: 2,
-      title: 'API Testing Framework',
-      description: 'Framework personalizado para testing de APIs REST con validación de schemas y generación de reportes.',
+      title: 'Automation Suite Karate DSL',
+      description: 'Suite completa de pruebas automatizadas para APIs RESTful utilizando Karate DSL y reportes detallados.',
       technologies: ['Postman', 'Newman', 'JavaScript'],
       category: 'automation',
       image: '🔌',
